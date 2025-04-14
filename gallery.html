@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Gallery</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="alert.js"></script>
+
 </head>
 <body>
     <header>
-        <h1>Gallery</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -19,25 +20,35 @@
         </nav>
     </header>
     <section>
-        <h1>Fav things</h1>
+            <h1>This is me!</h1>
+    </section>
+    <section>
+        <img src="assets/kei1.jpg" alt="Foto 1" width="240" height="300">
+        <img src="assets/kei3.jpg" alt="Foto 3" width="240" height="300">
+        <p>HELLOOO, my name is Jeannette y'all can call me Jeaa. 😸🙌</p>        
+    </section>
+    <section>
+            <h1>My fav things!</h1>
+    </section>
+    <section>
         <div class="gallery">
             <figure>
-                <img src="assets/bts.jpg" alt="Foto 1" width="240" height="300">
+                <img src="assets/bts.jpg" alt="BTS" width="240" height="300" onclick="showAlert('BTS', 'https://ibighit.com/bts/eng/')">
                 <figcaption>All time favorite singers and boy band</figcaption>
             </figure>
-                <img src="assets/laufey.jpg" alt="Foto 1" width="240" height="300">
-                <img src="assets/bea.jpg" alt="Foto 1" width="240" height="300">
+            <figure>
+                <img src="assets/laufey.jpg" alt="Laufey" width="240" height="300" onclick="showAlert('Laufey', 'https://www.laufeymusic.com/')">
                 <figcaption>Current favorite singer</figcaption>
             </figure>
             <figure>
-                <img src="assets/anime.jpg" alt="Foto 2" width="240" height="300">
-                <figcaption>All time favorite anime and still waiting for the next season</figcaption>
+                <img src="assets/anime.jpg" alt="Hunter x Hunter" width="240" height="300" onclick="showAlert('Hunter x Hunter', 'https://myanimelist.net/anime/11061/Hunter_x_Hunter_2011')">
+                <figcaption>All time favorite anime <br>
+                and still waiting for the next season</figcaption>
             </figure>
-            <figure>
-                <img src="assets/husbu.jpg" alt="Foto 3" width="240" height="300">
-                <figcaption>Current favorite anime charater and i think will be my all time favorite xixi</figcaption>
-            </figure>
-        </div>
+            <script src="alert.js"> </script>
+         </div>
     </section>
+
+
 </body>
 </html>
